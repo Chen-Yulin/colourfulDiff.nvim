@@ -36,6 +36,8 @@ local function detect_and_highlight()
 				myTint.clearTint(bufnr, block.diff_e + 1, diffblocks[i - 1].origin_s - 1)
 			end
 		end
+	else
+		myTint.clearTint(bufnr, 1, -1)
 	end
 end
 
